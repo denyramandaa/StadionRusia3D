@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>3D Building with zoom and pan (three.js)</title>
+    <!--<link type="text/css" href="index.css" rel="stylesheet"/>-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tween.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/stats.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+        #container{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #go-in{
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          z-index: 5;
+          cursor: pointer;
+          transform: translateY(-50%);
+        }
+        #go-out{
+          position: absolute;
+          top: 50%;
+          left: 20px;
+          z-index: 5;
+          cursor: pointer;
+          transform: translateY(-50%);
+        }
+        #go-pool{
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          z-index: 5;
+          cursor: pointer;
+          transform: translateY(-50%);
+        }
+        #go-back{
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          z-index: 5;
+          cursor: pointer;
+          transform: translateY(-50%);
+        }
+        .button-change{
+          padding: 20px;
+          background: red;
+          color: #fff;
+        }
+        .hide{
+            display: none;
+        }
+        .unhide{
+          display: block;
+        }
+    </style>
+  </head>
+  <body>
+    <section id="container">
+      <script src="js/app.js"></script>
+    </section>
+    <!--<div id="go-in" class="unhide">-->
+    <!--  <div class="button-change" onclick='next()'>Ke dalam</div>-->
+    <!--</div>-->
+    <!--<div id="go-out" class="hide">-->
+    <!--  <div class="button-change" onclick='prev()'>Ke luar</div>-->
+    <!--</div>-->
+    <!--<div id="go-pool" class="hide">-->
+    <!--  <div class="button-change" onclick='pool()'>Ke kolam</div>-->
+    <!--</div>-->
+    <!--<div id="go-back" class="hide">-->
+    <!--  <div class="button-change" onclick='back()'>Ke belakang</div>-->
+    <!--</div>-->
+  </body>
+</html>
